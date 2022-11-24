@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">
+        Keyboard Layout Converter
+    </h1>
+    <div>
+        <textarea id="input-field" onkeyup="convert()" spellcheck="false" rows="30" cols="90"></textarea>
+        <textarea id="output-field" readonly="true" spellcheck="false" rows="30" cols="90"></textarea>
+    </div>
+    <div>
+        <label for="selectFrom">From:</label>
+        <select name="selectFrom" id="selectFrom">
+            <option value="qwerty">Qwerty</option>
+            <option value="colemak">Colemak</option>
+            <option value="dvorak">Dvorak</option>
+        </select>
+        <label for="selectTo">To:</label>
+        <select name="selectTo" id="selectTo">
+            <option value="qwerty">Qwerty</option>
+            <option value="colemak">Colemak</option>
+            <option value="dvorak">Dvorak</option>
+        </select>
+        <button onclick="changeFromTo()">Apply</button> 
+    </div>
+</body>
+
+</html>
